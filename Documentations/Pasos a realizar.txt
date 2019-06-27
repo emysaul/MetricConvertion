@@ -1,0 +1,15 @@
+*** Repository Gighut
+Readme
+	RunTime 
+Chocolatey
+
+** Codigo 
+** Lic
+***Pruebas Unitarias
+***CRC
+** UML Class
+
+![image]
+Blog
+Como se podria mejorar el uso de esta aplicacion usando Machine Learning
+
