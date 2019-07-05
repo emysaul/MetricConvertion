@@ -21,6 +21,15 @@ namespace UniversalTranslator
             {"mm", -3 }  // milimetro
         };
 
+
+        // 
+        /// <summary>
+        /// This alghoritm was created based in this url https://www.youtube.com/watch?v=ZzqP8K2NGKk&t=98s
+        /// </summary>
+        /// <param name="origin"></param>
+        /// <param name="destiny"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static double GetConvertion(string origin, string destiny, double value)
         {
             double distance = Math.Abs(allowedConvertion[origin] - allowedConvertion[destiny]);

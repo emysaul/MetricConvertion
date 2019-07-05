@@ -25,6 +25,7 @@ namespace UniversalTranslator
         private static void ConvertUnity(string path)
         {
             new FileController().LoadFileAndConvert(path);
+
         }
     }
 }

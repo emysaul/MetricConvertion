@@ -4,3 +4,4 @@ D:\INTEC\Tendencias en Desarrollo de aplicaciones\MetricConvertion\MetricConvert
 D:\INTEC\Tendencias en Desarrollo de aplicaciones\MetricConvertion\MetricConvertion\Project\UniversalTranslator\UniversalTranslator\obj\Debug\UniversalTranslator.csproj.CoreCompileInputs.cache
 D:\INTEC\Tendencias en Desarrollo de aplicaciones\MetricConvertion\MetricConvertion\Project\UniversalTranslator\UniversalTranslator\obj\Debug\UniversalTranslator.exe
 D:\INTEC\Tendencias en Desarrollo de aplicaciones\MetricConvertion\MetricConvertion\Project\UniversalTranslator\UniversalTranslator\obj\Debug\UniversalTranslator.pdb
+D:\INTEC\Tendencias en Desarrollo de aplicaciones\MetricConvertion\MetricConvertion\Project\UniversalTranslator\UniversalTranslator\obj\Debug\UniversalTranslator.csprojAssemblyReference.cache

@@ -1,6 +1,11 @@
 *** Repository Gighut
 Readme
-	RunTime 
+	Description
+	RunTime // Que elementos necesita para ejecutarlo
+	Como usarlo.
+	
+Contributing
+
 Chocolatey
 
 ** Codigo 
@@ -12,4 +17,6 @@ Chocolatey
 ![image]
 Blog
 Como se podria mejorar el uso de esta aplicacion usando Machine Learning
+
+
 

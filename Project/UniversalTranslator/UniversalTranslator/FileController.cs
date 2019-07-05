@@ -16,15 +16,6 @@ namespace UniversalTranslator
                 WriteResult(result, path);
         }
 
-        private void WriteResult(IEnumerable<Entry> result, string path)
-        {
-            var r = result.Select(e => { return $"{e.Value.ToString()},{e.Origin.ToString()},{e.Destiny.ToString()}, {Converter.GetConvertion(e.Origin.ToString(), e.Destiny.ToString(), e.Value)}"; }).ToArray();
-
-
-            var originPath = System.IO.Path.GetDirectoryName(path);
-
-            File.WriteAllLines(originPath + $"\\result_{DateTime.Now.Hour}_{DateTime.Now.Minute}__{DateTime.Now.Second}_{DateTime.Now.Millisecond}.txt", r);
-        }
 
         public IEnumerable<Entry> LoadFile(string path)
         {
@@ -54,6 +45,17 @@ namespace UniversalTranslator
 
         }
 
+
+        private string[] LoadFilePath(string path)
+        {
+            if (!File.Exists(path))
+            {
+                Console.WriteLine("Esta direccion no existe");
+                return Array.Empty<string>();
+            }
+
+            return File.ReadAllLines(path);
+        }
         // line = "value,origin,destiny"
         private bool ValidateLine(string[] splitedLine)
         {
@@ -78,6 +80,7 @@ namespace UniversalTranslator
             return true;
         }
 
+
         private bool IsNumeric(string v)
         {
             if (v == "0")
@@ -87,15 +90,21 @@ namespace UniversalTranslator
             return value != 0;
         }
 
-        private string[] LoadFilePath(string path)
-        {
-            if (!File.Exists(path))
-            {
-                Console.WriteLine("Esta direccion no existe");
-                return Array.Empty<string>();
-            }
 
-            return File.ReadAllLines(path);
+        private void WriteResult(IEnumerable<Entry> result, string path)
+        {
+            var r = result.Select(e => { return $"{e.Value.ToString()},{e.Origin.ToString()},{e.Destiny.ToString()}, {Converter.GetConvertion(e.Origin.ToString(), e.Destiny.ToString(), e.Value)}"; }).ToArray();
+
+
+            var originPath = System.IO.Path.GetDirectoryName(path);
+
+
+            string pathOutput = originPath + $"\\result_{DateTime.Now.Hour}_{DateTime.Now.Minute}__{DateTime.Now.Second}_{DateTime.Now.Millisecond}.txt";
+            File.WriteAllLines(pathOutput, r);
         }
+
+
+      
+
     }
 }
